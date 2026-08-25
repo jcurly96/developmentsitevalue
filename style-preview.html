@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style Preview | developmentsiteadvisor.com</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .swatches { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0; }
+  .swatch { width: 120px; }
+  .swatch-color { height: 60px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); }
+  .swatch-label { font-size: 0.8rem; margin-top: 0.35rem; color: var(--color-text-muted); }
+  main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="logo">DevelopmentSiteAdvisor</div>
+  <nav class="site-nav">
+    <a href="#">Listings</a>
+    <a href="#">Articles</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Style Preview</h1>
+  <p>This page renders the color system defined in <code>css/style.css</code> so you can eyeball it before we build real pages on top of it.</p>
+
+  <h2>Palette</h2>
+  <div class="swatches">
+    <div class="swatch"><div class="swatch-color" style="background:var(--color-blue-primary)"></div><div class="swatch-label">--color-blue-primary</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:var(--color-blue-primary-hover)"></div><div class="swatch-label">--color-blue-primary-hover</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:var(--color-blue-dark)"></div><div class="swatch-label">--color-blue-dark</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:var(--color-blue-darker)"></div><div class="swatch-label">--color-blue-darker</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:var(--color-blue-light)"></div><div class="swatch-label">--color-blue-light</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:var(--color-gray-100)"></div><div class="swatch-label">--color-gray-100</div></div>
+    <div class="swatch"><div class="swatch-color" style="background:var(--color-gray-800)"></div><div class="swatch-label">--color-gray-800</div></div>
+  </div>
+
+  <h2>Buttons</h2>
+  <p>
+    <a href="#" class="btn btn-primary">View Listings</a>
+    <a href="#" class="btn btn-outline">Learn More</a>
+  </p>
+
+  <h2>Card</h2>
+  <div class="card">
+    <h3>123 Development Ave</h3>
+    <p class="swatch-label">Brooklyn, NY (Buildable sq ft: 24,000)</p>
+    <p>Sample property card using the default white card style with a soft shadow, similar to StreetEasy listing cards.</p>
+  </div>
+
+  <h2 style="margin-top:2rem;">Alt Section</h2>
+</main>
+
+<section class="section-alt">
+  <main style="padding-top:2rem; padding-bottom:2rem;">
+    <p>This is a pale-blue alt section background (<code>--color-bg-alt</code>), useful for breaking up long pages.</p>
+  </main>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2026 developmentsiteadvisor.com</p>
+</footer>
+
+</body>
+</html>

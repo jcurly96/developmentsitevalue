@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NYC Development Site &amp; Land Value Advisor | Jake Hulsh, BKREA</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo-link">
+    <div class="logo-photo"><img src="graphic designs/Jake.png" alt="Jake Hulsh"></div>
+    <div class="logo-text">
+      <div class="logo-name">Development Site Advisor</div>
+      <div class="logo-tagline">Jake Hulsh</div>
+    </div>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="about/">About</a>
+    <a href="closed-transactions/">Closed Transactions</a>
+    <a href="press/">Press</a>
+    <a href="writings/">Writings</a>
+    <a href="#get-valuation" class="btn btn-primary">Get My Free Valuation</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div class="section-eyebrow">NYC Development Site &amp; Land Value Advisor</div>
+    <div class="hero-byline">Jake Hulsh, BKREA</div>
+    <h1>Is Your <em>NYC Property</em> More Valuable To A Developer?</h1>
+    <p class="hero-subhead">
+      Buildings can be valued based on the income they generate, or based on
+      their development potential. We help you determine which one is worth
+      more to a prospective purchaser.
+    </p>
+    <div class="hero-ctas">
+      <a href="#get-valuation" class="btn btn-primary">Get My Free Land Value Analysis</a>
+      <a href="writings/" class="btn btn-outline">Explore Writings</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-value">5</div>
+        <div class="hero-stat-label">Boroughs Covered</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">24hr</div>
+        <div class="hero-stat-label">Response Time</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-skyline-wrap">
+
+    <div class="hero-emoji hero-emoji-ufo" aria-hidden="true">&#128760;</div>
+    <div class="hero-emoji hero-emoji-rocket" aria-hidden="true">&#128640;</div>
+    <div class="hero-emoji hero-emoji-heli" aria-hidden="true">&#128641;</div>
+
+    <svg class="hero-skyline" viewBox="0 0 1200 150" preserveAspectRatio="none" aria-hidden="true">
+      <!-- hazy background row for depth -->
+      <rect class="building-far" x="-10" y="70" width="140" height="80"/>
+      <rect class="building-far" x="140" y="90" width="120" height="60"/>
+      <rect class="building-far" x="270" y="55" width="150" height="95"/>
+      <rect class="building-far" x="430" y="80" width="110" height="70"/>
+      <rect class="building-far" x="550" y="45" width="140" height="105"/>
+      <rect class="building-far" x="700" y="85" width="120" height="65"/>
+      <rect class="building-far" x="830" y="65" width="150" height="85"/>
+      <rect class="building-far" x="990" y="50" width="130" height="100"/>
+      <rect class="building-far" x="1130" y="80" width="100" height="70"/>
+
+      <!-- foreground buildings, each drawn as a 3-face isometric block (front, side, roof) -->
+      <g>
+        <rect class="face-front" x="0" y="80" width="28" height="60"/>
+        <polygon class="face-side" points="28,80 36,75 36,140 28,140"/>
+        <polygon class="face-top" points="0,80 28,80 36,75 8,75"/>
+      </g>
+      <g>
+        <rect class="face-front" x="36" y="45" width="24" height="95"/>
+        <polygon class="face-side" points="60,45 68,40 68,140 60,140"/>
+        <polygon class="face-top" points="36,45 60,45 68,40 44,40"/>
+      </g>
+      <g>
+        <rect class="face-front" x="68" y="90" width="32" height="50"/>
+        <polygon class="face-side" points="100,90 108,85 108,140 100,140"/>
+        <polygon class="face-top" points="68,90 100,90 108,85 76,85"/>
+      </g>
+      <g>
+        <rect class="face-front" x="108" y="25" width="22" height="115"/>
+        <polygon class="face-side" points="130,25 138,20 138,140 130,140"/>
+        <polygon class="face-top" points="108,25 130,25 138,20 116,20"/>
+        <rect class="accent" x="117.5" y="5" width="3" height="20"/>
+      </g>
+      <g>
+        <rect class="face-front" x="138" y="65" width="26" height="75"/>
+        <polygon class="face-side" points="164,65 172,60 172,140 164,140"/>
+        <polygon class="face-top" points="138,65 164,65 172,60 146,60"/>
+      </g>
+      <g>
+        <rect class="face-front" x="172" y="85" width="30" height="55"/>
+        <polygon class="face-side" points="202,85 210,80 210,140 202,140"/>
+        <polygon class="face-top" points="172,85 202,85 210,80 180,80"/>
+      </g>
+      <g>
+        <rect class="face-front" x="210" y="35" width="24" height="105"/>
+        <polygon class="face-side" points="234,35 242,30 242,140 234,140"/>
+        <polygon class="face-top" points="210,35 234,35 242,30 218,30"/>
+      </g>
+      <g>
+        <rect class="face-front" x="242" y="70" width="20" height="70"/>
+        <polygon class="face-side" points="262,70 270,65 270,140 262,140"/>
+        <polygon class="face-top" points="242,70 262,70 270,65 250,65"/>
+      </g>
+      <g>
+        <rect class="face-front" x="270" y="50" width="34" height="90"/>
+        <polygon class="face-side" points="304,50 312,45 312,140 304,140"/>
+        <polygon class="face-top" points="270,50 304,50 312,45 278,45"/>
+      </g>
+      <g>
+        <rect class="face-front" x="312" y="80" width="26" height="60"/>
+        <polygon class="face-side" points="338,80 346,75 346,140 338,140"/>
+        <polygon class="face-top" points="312,80 338,80 346,75 320,75"/>
+      </g>
+      <g>
+        <rect class="face-front" x="346" y="20" width="22" height="120"/>
+        <polygon class="face-side" points="368,20 376,15 376,140 368,140"/>
+        <polygon class="face-top" points="346,20 368,20 376,15 354,15"/>
+        <rect class="accent" x="355.5" y="2" width="4" height="18"/>
+      </g>
+      <g>
+        <rect class="face-front" x="376" y="60" width="30" height="80"/>
+        <polygon class="face-side" points="406,60 414,55 414,140 406,140"/>
+        <polygon class="face-top" points="376,60 406,60 414,55 384,55"/>
+      </g>
+      <g>
+        <rect class="face-front" x="414" y="90" width="24" height="50"/>
+        <polygon class="face-side" points="438,90 446,85 446,140 438,140"/>
+        <polygon class="face-top" points="414,90 438,90 446,85 422,85"/>
+      </g>
+      <g>
+        <rect class="face-front" x="446" y="40" width="28" height="100"/>
+        <polygon class="face-side" points="474,40 482,35 482,140 474,140"/>
+        <polygon class="face-top" points="446,40 474,40 482,35 454,35"/>
+      </g>
+      <g>
+        <rect class="face-front" x="482" y="75" width="22" height="65"/>
+        <polygon class="face-side" points="504,75 512,70 512,140 504,140"/>
+        <polygon class="face-top" points="482,75 504,75 512,70 490,70"/>
+      </g>
+      <g>
+        <rect class="face-front" x="512" y="30" width="32" height="110"/>
+        <polygon class="face-side" points="544,30 552,25 552,140 544,140"/>
+        <polygon class="face-top" points="512,30 544,30 552,25 520,25"/>
+        <rect class="accent" x="522" y="22" width="12" height="8"/>
+        <polygon class="accent" points="522,22 534,22 528,13"/>
+      </g>
+      <g>
+        <rect class="face-front" x="552" y="65" width="26" height="75"/>
+        <polygon class="face-side" points="578,65 586,60 586,140 578,140"/>
+        <polygon class="face-top" points="552,65 578,65 586,60 560,60"/>
+      </g>
+      <g>
+        <rect class="face-front" x="586" y="85" width="20" height="55"/>
+        <polygon class="face-side" points="606,85 614,80 614,140 606,140"/>
+        <polygon class="face-top" points="586,85 606,85 614,80 594,80"/>
+      </g>
+      <g>
+        <rect class="face-front" x="614" y="45" width="30" height="95"/>
+        <polygon class="face-side" points="644,45 652,40 652,140 644,140"/>
+        <polygon class="face-top" points="614,45 644,45 652,40 622,40"/>
+      </g>
+      <g>
+        <rect class="face-front" x="652" y="70" width="24" height="70"/>
+        <polygon class="face-side" points="676,70 684,65 684,140 676,140"/>
+        <polygon class="face-top" points="652,70 676,70 684,65 660,65"/>
+      </g>
+      <g>
+        <rect class="face-front" x="684" y="35" width="34" height="105"/>
+        <polygon class="face-side" points="718,35 726,30 726,140 718,140"/>
+        <polygon class="face-top" points="684,35 718,35 726,30 692,30"/>
+        <rect class="accent" x="695" y="27" width="12" height="8"/>
+        <polygon class="accent" points="695,27 707,27 701,18"/>
+      </g>
+      <g>
+        <rect class="face-front" x="726" y="80" width="26" height="60"/>
+        <polygon class="face-side" points="752,80 760,75 760,140 752,140"/>
+        <polygon class="face-top" points="726,80 752,80 760,75 734,75"/>
+      </g>
+      <g>
+        <rect class="face-front" x="760" y="55" width="22" height="85"/>
+        <polygon class="face-side" points="782,55 790,50 790,140 782,140"/>
+        <polygon class="face-top" points="760,55 782,55 790,50 768,50"/>
+      </g>
+      <g>
+        <rect class="face-front" x="790" y="90" width="30" height="50"/>
+        <polygon class="face-side" points="820,90 828,85 828,140 820,140"/>
+        <polygon class="face-top" points="790,90 820,90 828,85 798,85"/>
+      </g>
+      <g>
+        <rect class="face-front" x="828" y="25" width="24" height="115"/>
+        <polygon class="face-side" points="852,25 860,20 860,140 852,140"/>
+        <polygon class="face-top" points="828,25 852,25 860,20 836,20"/>
+        <rect class="accent" x="838.5" y="5" width="3" height="20"/>
+      </g>
+      <g>
+        <rect class="face-front" x="860" y="70" width="28" height="70"/>
+        <polygon class="face-side" points="888,70 896,65 896,140 888,140"/>
+        <polygon class="face-top" points="860,70 888,70 896,65 868,65"/>
+      </g>
+      <g>
+        <rect class="face-front" x="896" y="45" width="22" height="95"/>
+        <polygon class="face-side" points="918,45 926,40 926,140 918,140"/>
+        <polygon class="face-top" points="896,45 918,45 926,40 904,40"/>
+      </g>
+      <g>
+        <rect class="face-front" x="926" y="80" width="32" height="60"/>
+        <polygon class="face-side" points="958,80 966,75 966,140 958,140"/>
+        <polygon class="face-top" points="926,80 958,80 966,75 934,75"/>
+      </g>
+      <g>
+        <rect class="face-front" x="966" y="35" width="26" height="105"/>
+        <polygon class="face-side" points="992,35 1000,30 1000,140 992,140"/>
+        <polygon class="face-top" points="966,35 992,35 1000,30 974,30"/>
+        <rect class="accent" x="973" y="27" width="12" height="8"/>
+        <polygon class="accent" points="973,27 985,27 979,18"/>
+      </g>
+      <g>
+        <rect class="face-front" x="1000" y="65" width="40" height="75"/>
+        <polygon class="face-side" points="1040,65 1048,60 1048,140 1040,140"/>
+        <polygon class="face-top" points="1000,65 1040,65 1048,60 1008,60"/>
+      </g>
+      <g>
+        <rect class="face-front" x="1048" y="75" width="28" height="65"/>
+        <polygon class="face-side" points="1076,75 1084,70 1084,140 1076,140"/>
+        <polygon class="face-top" points="1048,75 1076,75 1084,70 1056,70"/>
+      </g>
+      <g>
+        <rect class="face-front" x="1084" y="40" width="24" height="100"/>
+        <polygon class="face-side" points="1108,40 1116,35 1116,140 1108,140"/>
+        <polygon class="face-top" points="1084,40 1108,40 1116,35 1092,35"/>
+      </g>
+      <g>
+        <rect class="face-front" x="1116" y="85" width="30" height="55"/>
+        <polygon class="face-side" points="1146,85 1154,80 1154,140 1146,140"/>
+        <polygon class="face-top" points="1116,85 1146,85 1154,80 1124,80"/>
+      </g>
+      <g>
+        <rect class="face-front" x="1154" y="55" width="46" height="85"/>
+        <polygon class="face-side" points="1200,55 1208,50 1208,140 1200,140"/>
+        <polygon class="face-top" points="1154,55 1200,55 1208,50 1162,50"/>
+      </g>
+
+      <rect class="window" x="42" y="60" width="5" height="7" style="animation-delay:0s"/>
+      <rect class="window" x="46" y="90" width="5" height="7" style="animation-delay:0.3s"/>
+      <rect class="window" x="114" y="45" width="5" height="7" style="animation-delay:0.6s"/>
+      <rect class="window" x="118" y="90" width="5" height="7" style="animation-delay:0.9s"/>
+      <rect class="window" x="217" y="55" width="5" height="7" style="animation-delay:1.2s"/>
+      <rect class="window" x="221" y="90" width="5" height="7" style="animation-delay:1.5s"/>
+      <rect class="window" x="278" y="65" width="5" height="7" style="animation-delay:1.8s"/>
+      <rect class="window" x="288" y="95" width="5" height="7" style="animation-delay:2.1s"/>
+      <rect class="window" x="352" y="40" width="5" height="7" style="animation-delay:2.4s"/>
+      <rect class="window" x="356" y="90" width="5" height="7" style="animation-delay:2.7s"/>
+      <rect class="window" x="453" y="60" width="5" height="7" style="animation-delay:0s"/>
+      <rect class="window" x="457" y="95" width="5" height="7" style="animation-delay:0.3s"/>
+      <rect class="window" x="520" y="50" width="5" height="7" style="animation-delay:0.6s"/>
+      <rect class="window" x="528" y="90" width="5" height="7" style="animation-delay:0.9s"/>
+      <rect class="window" x="621" y="65" width="5" height="7" style="animation-delay:1.2s"/>
+      <rect class="window" x="626" y="100" width="5" height="7" style="animation-delay:1.5s"/>
+      <rect class="window" x="692" y="55" width="5" height="7" style="animation-delay:1.8s"/>
+      <rect class="window" x="700" y="95" width="5" height="7" style="animation-delay:2.1s"/>
+      <rect class="window" x="834" y="45" width="5" height="7" style="animation-delay:2.4s"/>
+      <rect class="window" x="838" y="90" width="5" height="7" style="animation-delay:2.7s"/>
+      <rect class="window" x="902" y="65" width="5" height="7" style="animation-delay:0s"/>
+      <rect class="window" x="905" y="100" width="5" height="7" style="animation-delay:0.3s"/>
+      <rect class="window" x="973" y="55" width="5" height="7" style="animation-delay:0.6s"/>
+      <rect class="window" x="977" y="95" width="5" height="7" style="animation-delay:0.9s"/>
+      <rect class="window" x="1091" y="60" width="5" height="7" style="animation-delay:1.2s"/>
+      <rect class="window" x="1095" y="95" width="5" height="7" style="animation-delay:1.5s"/>
+      <rect class="window" x="1165" y="70" width="5" height="7" style="animation-delay:1.8s"/>
+      <rect class="window" x="1180" y="95" width="5" height="7" style="animation-delay:2.1s"/>
+    </svg>
+  </div>
+</section>
+
+<main class="page">
+
+  <!-- VALUE GAP -->
+  <section class="page-section section-tint-1">
+   <div class="section-inner">
+    <div class="section-heading">
+      <div class="section-eyebrow">The Land Value Gap</div>
+      <h2>Two Ways To Value The Same Property</h2>
+    </div>
+    <div class="value-gap">
+      <div class="value-gap-card is-rent">
+        <h3>What Rent Tells You</h3>
+        <p class="placeholder">Income-based valuation using NOI and cap rates. This is what a buyer would pay for the cash flow the building generates today.</p>
+      </div>
+      <div class="value-gap-card is-zoning">
+        <h3>What Zoning Tells You</h3>
+        <p class="placeholder">Land-based valuation using FAR (floor area ratio) and development comparables. This is what a buyer would pay for the unbuilt potential.</p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- QUALIFYING SIGNALS -->
+  <section class="page-section section-tint-2">
+   <div class="section-inner">
+    <div class="section-heading">
+      <div class="section-eyebrow">Is Your Property Under-Built?</div>
+      <h2>Signs Your Site May Be Worth More As Land</h2>
+    </div>
+    <div class="signals-grid">
+      <div class="signal-item"><div class="signal-check">&#10003;</div><div>Your building is only 2 to 4 stories tall, even though local zoning allows buildings of 8 to 20 stories.</div></div>
+      <div class="signal-item"><div class="signal-check">&#10003;</div><div>Neighboring parcels have recently sold to buyers planning new construction.</div></div>
+      <div class="signal-item"><div class="signal-check">&#10003;</div><div>Your existing structure is primarily office or commercial space rather than residential.</div></div>
+      <div class="signal-item"><div class="signal-check">&#10003;</div><div>Current tenants are month to month, market rate, or the space sits empty.</div></div>
+      <div class="signal-item"><div class="signal-check">&#10003;</div><div>A recent rezoning or upzoning increased the buildable potential nearby.</div></div>
+      <div class="signal-item"><div class="signal-check">&#10003;</div><div>Your lot sits on a corner, is larger than typical, or borders parcels that could be assembled together.</div></div>
+    </div>
+   </div>
+  </section>
+
+  <!-- LAND COMPARABLES -->
+  <section class="page-section section-tint-3">
+   <div class="section-inner">
+    <div class="section-heading">
+      <div class="section-eyebrow">Recent Activity</div>
+      <h2>Land Comparables</h2>
+    </div>
+    <table class="transactions-table">
+      <thead>
+        <tr>
+          <th>Address</th>
+          <th>Date</th>
+          <th>Price</th>
+          <th>ZFA</th>
+          <th>$/ZFA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>440 Broadway</td>
+          <td>4/21/2026</td>
+          <td>$6,600,000</td>
+          <td>26,901</td>
+          <td>$245</td>
+        </tr>
+        <tr>
+          <td>515 Greenwich Street</td>
+          <td>8/1/2026</td>
+          <td>$97,500,000</td>
+          <td>136,870</td>
+          <td>$712</td>
+        </tr>
+        <tr>
+          <td>42 Second Avenue</td>
+          <td>8/1/2026</td>
+          <td>$57,000,000</td>
+          <td>100,936</td>
+          <td>$565</td>
+        </tr>
+        <tr>
+          <td>80 Morton Street</td>
+          <td>9/4/2025</td>
+          <td>$1,400,000</td>
+          <td>12,625</td>
+          <td>$111</td>
+        </tr>
+        <tr class="comp-row-extra">
+          <td>121 East 7th Street</td>
+          <td>7/24/2025</td>
+          <td>$2,800,000</td>
+          <td>8,624</td>
+          <td>$325</td>
+        </tr>
+        <tr class="comp-row-extra">
+          <td>126 Lafayette</td>
+          <td>6/11/2025</td>
+          <td>$14,700,000</td>
+          <td>62,950</td>
+          <td>$234</td>
+        </tr>
+        <tr class="comp-row-extra">
+          <td>89 1st Avenue</td>
+          <td>6/10/2025</td>
+          <td>$4,000,000</td>
+          <td>9,700</td>
+          <td>$412</td>
+        </tr>
+        <tr class="comp-row-extra">
+          <td>153 Attorney Street</td>
+          <td>1/27/2025</td>
+          <td>$9,800,000</td>
+          <td>20,200</td>
+          <td>$485</td>
+        </tr>
+        <tr class="comp-row-extra">
+          <td>391 Canal Street</td>
+          <td>9/1/2024</td>
+          <td>$3,077,280</td>
+          <td>16,658</td>
+          <td>$185</td>
+        </tr>
+        <tr class="comp-row-extra">
+          <td>45 Renwick Street</td>
+          <td>12/1/2023</td>
+          <td>$5,000,000</td>
+          <td>8,994</td>
+          <td>$556</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="text-align:center; margin-top:1.5rem;">
+      <button type="button" class="btn btn-outline" id="comps-toggle">See More</button>
+    </p>
+   </div>
+  </section>
+
+  <!-- RESOURCES / TAX INCENTIVE GUIDES -->
+  <section class="page-section section-tint-4">
+   <div class="section-inner">
+    <div class="section-heading">
+      <div class="section-eyebrow">Programs &amp; Resources</div>
+      <h2>Guides To NYC Development Incentives</h2>
+    </div>
+    <div class="resources-grid">
+      <div class="card resource-card">
+        <div class="resource-icon">&#127970;</div>
+        <h3>467-m Tax Incentive</h3>
+        <p>A tax incentive generally tied to converting underused office and commercial buildings into residential use, and a factor in what a developer will pay for an eligible site.</p>
+        <a href="articles/467m-vs-485x-tax-incentives/">Read More &rarr;</a>
+      </div>
+      <div class="card resource-card">
+        <div class="resource-icon">&#128188;</div>
+        <h3>485-x Tax Incentive</h3>
+        <p>A tax incentive covering new residential construction, generally tied to affordability requirements, that can affect what a ground-up project on your site is worth.</p>
+        <a href="articles/467m-vs-485x-tax-incentives/">Read More &rarr;</a>
+      </div>
+      <div class="card resource-card">
+        <div class="resource-icon">&#128506;&#65039;</div>
+        <h3>Rezoning &amp; Density</h3>
+        <p>How FAR and buildable square footage set what can legally be built on your lot, and why under-built sites are worth more as land.</p>
+        <a href="articles/far-and-buildable-square-footage-explained/">Read More &rarr;</a>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="page-section section-tint-1">
+   <div class="section-inner">
+    <div class="section-heading">
+      <div class="section-eyebrow">How It Works</div>
+      <h2>Three Steps To Your Land Value</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="process-step-number">1</div>
+        <h3>Submit Property Info</h3>
+        <p class="placeholder">Share the address and a few basic details about the property.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step-number">2</div>
+        <h3>Zoning &amp; Comps Research</h3>
+        <p class="placeholder">We pull the zoning, FAR, and recent development comps for the block.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-step-number">3</div>
+        <h3>Get Both Values</h3>
+        <p class="placeholder">Receive both the land value and income value within 24 hours.</p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- LEAD FORM -->
+  <section id="get-valuation" class="page-section section-tint-5">
+   <div class="section-inner">
+    <div class="section-heading">
+      <div class="section-eyebrow">Get Started</div>
+      <h2>Get My Free Land Value Analysis</h2>
+    </div>
+    <form class="lead-form">
+      <div>
+        <label for="f-name">Name</label>
+        <input id="f-name" type="text" name="name" placeholder="Your name">
+      </div>
+      <div>
+        <label for="f-phone">Phone</label>
+        <input id="f-phone" type="tel" name="phone" placeholder="(___) ___-____">
+      </div>
+      <div class="field-full">
+        <label for="f-email">Email</label>
+        <input id="f-email" type="email" name="email" placeholder="you@example.com">
+      </div>
+      <div class="field-full">
+        <label for="f-address">Property Address</label>
+        <input id="f-address" type="text" name="address" placeholder="123 Main St, Brooklyn, NY">
+      </div>
+      <div class="field-full">
+        <label for="f-message">Anything else we should know?</label>
+        <textarea id="f-message" name="message" rows="3" placeholder="Optional"></textarea>
+      </div>
+      <div class="field-full">
+        <button type="submit" class="btn btn-primary">Get My Free Land Value Analysis</button>
+        <p class="lead-form-note">Your information is 100% confidential and will only be used to prepare your land value analysis. [Form is not yet connected to a backend. It needs a submission handler.]</p>
+      </div>
+    </form>
+   </div>
+  </section>
+
+  <!-- WHY CHOOSE -->
+  <section class="page-section section-tint-3">
+   <div class="section-inner">
+    <div class="section-heading">
+      <div class="section-eyebrow">Why Choose Development Site Advisor</div>
+      <h2>What Sets This Apart</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><h3>&#128205; All Five Boroughs</h3><p class="placeholder">Coverage across Manhattan, Brooklyn, Queens, the Bronx, and Staten Island.</p></div>
+      <div class="why-item"><h3>&#128202; Zoning-First Methodology</h3><p class="placeholder">Every analysis starts with FAR and development comps, not just rent roll.</p></div>
+      <div class="why-item"><h3>&#128274; Confidential</h3><p class="placeholder">Your property and financial details are never shared without permission.</p></div>
+      <div class="why-item"><h3>&#9201;&#65039; 24-Hour Turnaround</h3><p class="placeholder">Fast answers so you can move on decisions with confidence.</p></div>
+    </div>
+   </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo-link">
+        <div class="logo-photo"><img src="graphic designs/Jake.png" alt="Jake Hulsh"></div>
+        <div class="logo-text">
+          <div class="logo-name">Development Site Advisor</div>
+          <div class="logo-tagline">Jake Hulsh</div>
+        </div>
+      </a>
+      <p class="placeholder">[One or two lines about Jake Hulsh's practice and coverage area.]</p>
+    </div>
+    <div class="footer-col">
+      <h4>Development</h4>
+      <ul>
+        <li><a href="#" class="placeholder">Development Site Valuation</a></li>
+        <li><a href="#" class="placeholder">Zoning &amp; FAR Analysis</a></li>
+        <li><a href="#" class="placeholder">Assemblage Opportunities</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Valuation Guides</h4>
+      <ul>
+        <li><a href="articles/467m-vs-485x-tax-incentives/">467-m Tax Incentive</a></li>
+        <li><a href="articles/467m-vs-485x-tax-incentives/">485-x Tax Incentive</a></li>
+        <li><a href="articles/far-and-buildable-square-footage-explained/">Rezoning &amp; Density</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Jake Hulsh</h4>
+      <ul>
+        <li><a href="about/">About</a></li>
+        <li><a href="closed-transactions/">Closed Transactions</a></li>
+        <li><a href="press/">Press</a></li>
+        <li><a href="writings/">Writings</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Jake Hulsh, Development Site Advisor. developmentsiteadvisor.com
+  </div>
+</footer>
+
+<script src="js/land-comps.js"></script>
+</body>
+</html>
