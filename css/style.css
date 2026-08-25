@@ -347,12 +347,12 @@ a:hover {
 }
 
 .hero-byline {
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 800;
   color: var(--color-blue-dark);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.4rem;
 }
 
 .hero h1 {
