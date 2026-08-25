@@ -256,6 +256,31 @@ a:hover {
   text-decoration: none;
 }
 
+@media (max-width: 640px) {
+  .site-header {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .logo-text .logo-tagline {
+    font-size: 0.65rem;
+  }
+
+  .site-nav {
+    gap: 0.75rem;
+  }
+
+  .site-nav a:not(.btn) {
+    display: none;
+  }
+
+  .site-nav .btn {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
+  }
+}
+
 /* ---- Buttons ------------------------------------------------------------ */
 
 .btn {
@@ -745,6 +770,10 @@ a:hover {
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+}
+
 .footer-brand .logo-name {
   color: var(--color-white);
   font-weight: 800;
@@ -808,6 +837,28 @@ a:hover {
 
 section.page-section {
   padding: 2.75rem 0;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 2.25rem 1.25rem 0;
+  }
+
+  .hero-skyline {
+    height: 90px;
+  }
+
+  .hero-skyline-wrap {
+    margin-top: 1.75rem;
+  }
+
+  section.page-section {
+    padding: 2rem 0;
+  }
+
+  .section-inner {
+    padding: 0 1.25rem;
+  }
 }
 
 /* Full-width color bands. Each section gets its own tint from the same blue
@@ -892,6 +943,19 @@ section.page-section {
 
 .comp-row-extra {
   display: none;
+}
+
+@media (max-width: 700px) {
+  .transactions-table-wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .transactions-table {
+    min-width: 560px;
+  }
 }
 
 /* ---- Press page -------------------------------------------------------------- */
